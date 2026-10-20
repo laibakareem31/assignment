@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        .button {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sign Up</h1>
+
+    <form action="login.html">
+
+        Full Name:
+        <input type="text" required>
+        <br><br>
+
+        Email:
+        <input type="email" placeholder="example@example.com" required>
+        <br><br>
+
+        Password:
+        <input type="password" placeholder="********" minlength="8" required>
+        <br><br>
+
+        Confirm Password:
+        <input type="password" placeholder="********" minlength="8" required>
+        <br><br>
+
+        Phone Number:
+        <input type="text" required>
+        <br><br>
+
+        <input class="button" type="submit" value="Sign Up">
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</body>
+</html>
+
