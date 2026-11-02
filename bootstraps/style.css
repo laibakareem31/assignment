@@ -1,0 +1,427 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #243b2b;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --green: #315b3c;
+    --light-green: #eaf2e7;
+    --dark-green: #203d29;
+}
+
+/* Navbar */
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--green) !important;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: 14px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #4d8b52 !important;
+}
+
+.shop-btn {
+    background-color: var(--green);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 22px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #203d29;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    padding: 75px 0;
+    background-color: #f3f7ef;
+    overflow: hidden;
+}
+
+.small-heading {
+    color: #5b8957;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark-green);
+}
+
+.hero h1 span,
+.section-heading h2 span,
+.about-section h2 span,
+.newsletter h2 span {
+    color: #68985e;
+}
+
+.hero-description {
+    color: #6c776d;
+    line-height: 1.9;
+    margin: 20px 0 25px;
+    max-width: 480px;
+}
+
+.main-btn {
+    background-color: var(--green);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #203d29;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.second-btn {
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.second-btn:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+.hero-image {
+    height: 430px;
+    overflow: hidden;
+    border-radius: 150px 150px 20px 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Features */
+.features {
+    background-color: white;
+}
+
+.feature-box {
+    padding: 15px 8px;
+}
+
+.feature-box span {
+    font-size: 30px;
+}
+
+.feature-box h6 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.feature-box p {
+    color: #818981;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Plant Cards */
+.plants-section {
+    background-color: #fafbf8;
+}
+
+.section-heading h2,
+.about-section h2,
+.newsletter h2 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.section-heading > p:last-child {
+    color: #7a827a;
+    font-size: 14px;
+}
+
+.plant-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(35, 65, 38, 0.07);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.plant-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(35, 65, 38, 0.14);
+}
+
+.plant-image {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaf2e7;
+}
+
+.plant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.plant-card:hover .plant-image img {
+    transform: scale(1.08);
+}
+
+.plant-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #e5f2dd;
+    color: #315b3c;
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.plant-info {
+    padding: 20px;
+}
+
+.plant-type {
+    font-size: 11px;
+    color: #819080;
+    margin-bottom: 7px;
+}
+
+.plant-info h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.price {
+    color: var(--green);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.add-btn {
+    background-color: var(--green);
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #76a66b;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+}
+
+.about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-section h2 {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #747d74;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.about-point {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #48594a;
+}
+
+.about-point span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+    color: var(--green);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #f0f6ec;
+}
+
+.newsletter p:not(.small-heading) {
+    color: #707a70;
+    font-size: 14px;
+    margin: 18px 0 25px;
+}
+
+.newsletter-btn {
+    background-color: var(--green);
+    color: white;
+    border-radius: 30px;
+    padding: 12px 35px;
+    transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+    background-color: #203d29;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    background-color: #203d29;
+    color: white;
+    padding: 35px 0 20px;
+}
+
+.footer h4 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #d0ddcf;
+    font-size: 13px;
+}
+
+.footer .copyright {
+    border-top: 1px solid #45604a;
+    padding-top: 18px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 15px;
+        align-items: flex-start !important;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .navbar-nav .shop-btn {
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-image {
+        height: 350px;
+        border-radius: 100px 100px 20px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .second-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .plant-image {
+        height: 210px;
+    }
+
+    .plant-info {
+        padding: 14px;
+    }
+
+    .plant-info h5 {
+        font-size: 14px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .feature-box h6 {
+        font-size: 13px;
+    }
+}
