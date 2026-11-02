@@ -1,0 +1,390 @@
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21243d;
+    background-color: #e8e8e8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 25px;
+}
+
+.logo {
+    display: none;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #21243d;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6464;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Introduction */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 55px 45px;
+}
+
+.intro-text {
+    max-width: 490px;
+}
+
+.intro-text h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Red Button */
+.red-btn {
+    display: inline-block;
+    background-color: #ff6464;
+    color: white;
+    padding: 7px 14px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.red-btn:hover {
+    background-color: #d93b3b;
+    transform: translateY(-2px);
+}
+
+/* Recent Posts */
+.recent-posts {
+    background-color: #edf7fa;
+    padding: 20px 55px 25px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-heading h2,
+.works-heading {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.section-heading a {
+    text-decoration: none;
+    color: #00a8cc;
+    font-size: 12px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background-color: white;
+    padding: 18px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.post-card:hover {
+    box-shadow: 0 5px 15px #00000015;
+    transform: translateY(-3px);
+}
+
+.post-card h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.post-info {
+    font-size: 11px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.post-card p:last-child {
+    font-size: 12px;
+}
+
+/* Featured Works */
+.featured-works {
+    padding: 25px 55px;
+}
+
+.works-heading {
+    margin-bottom: 20px;
+}
+
+.work-card {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.work-card img {
+    width: 230px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.work-card img:hover {
+    transform: scale(1.03);
+}
+
+.work-content {
+    flex: 1;
+}
+
+.work-content h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.work-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.year {
+    background-color: #142850;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.work-content p {
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #21243d;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff6464;
+}
+
+footer p {
+    font-size: 11px;
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+
+    .intro {
+        padding: 30px;
+    }
+
+    .recent-posts,
+    .featured-works {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .work-card img {
+        width: 190px;
+        height: 135px;
+    }
+
+    .work-content h3 {
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 12px 18px;
+    }
+
+    .logo {
+        display: block;
+        font-size: 18px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* Intro image above text */
+    .intro {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 22px 35px;
+        gap: 20px;
+    }
+
+    .intro-text h1 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    .intro-text p {
+        font-size: 12px;
+    }
+
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Posts one below another */
+    .recent-posts {
+        padding: 20px 18px;
+    }
+
+    .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .post-card {
+        padding: 18px;
+    }
+
+    .post-card h3 {
+        font-size: 17px;
+    }
+
+    /* Works one below another */
+    .featured-works {
+        padding: 22px 18px;
+    }
+
+    .works-heading {
+        font-size: 16px;
+    }
+
+    .work-card {
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .work-card img {
+        width: 100%;
+        height: 190px;
+    }
+
+    .work-content h3 {
+        font-size: 18px;
+    }
+
+    .work-content p {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
