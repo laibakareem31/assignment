@@ -15,51 +15,126 @@
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <img src="" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                    <button class="btn btn-outline-success" type="submit">Order Now</button>
-                </form>
+   <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container-fluid">
+
+        <!-- Mobile Brand -->
+        <a class="navbar-brand d-lg-none" href="#">
+            NASA
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <!-- Left Side -->
+            <div class="explore me-auto">
+
+                <a href="#" class="nav-link">
+                    Explore
+                </a>
+
+                <select aria-label="Explore menu">
+                    <option>⌄</option>
+                    <option>Earth</option>
+                    <option>Solar System</option>
+                </select>
+
+                <input type="search"
+                    class="search-box"
+                    placeholder="Search">
+
             </div>
+
+            <!-- Center Logo -->
+            <a href="#" class="logo-link d-none d-lg-block">
+                <img
+                    src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+                    class="nasa-logo"
+                    alt="NASA Logo">
+            </a>
+
+            <!-- Right Side -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        News & Events <span>⌄</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Multimedia <span>⌄</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        NASA+ <span class="live">LIVE</span>
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
-    </nav>
+    </div>
+</nav>
+    <!-- navbar end -->
+     <!-- 2nd section -->
+       <section class="spacewalk-section container-fluid">
 
+        <!-- Live Heading -->
+        <div class="live-heading">
+            <h4>
+                LIVE Thursday, Nov. 5, 7 a.m. EST (1200 UTC)
+            </h4>
+        </div>
 
+        <hr>
 
+        <!-- Spacewalk Content -->
+        <div class="spacewalk-content">
+
+            <!-- Image -->
+            <div class="spacewalk-image">
+                <img src="https://www.nasa.gov/wp-content/uploads/2026/02/54932690834-554a3bc4d2-o.jpg?resize=200,200"
+                     alt="Spacewalk">
+            </div>
+
+            <!-- Title -->
+            <div class="spacewalk-title">
+                <h1>US Spacewalk 101</h1>
+            </div>
+
+            <!-- Description -->
+            <div class="spacewalk-description">
+                <p>
+                    Coverage of U.S. Spacewalk 101 at the
+                    International Space Station
+                </p>
+            </div>
+
+            <!-- Arrow Button -->
+            <div class="spacewalk-button">
+                <a href="#" aria-label="Read more">
+                    <span>→</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
