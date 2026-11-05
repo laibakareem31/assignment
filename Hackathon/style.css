@@ -1,0 +1,335 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    min-height: 80px;
+    padding: 10px 25px;
+}
+
+/* Navigation Links */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-nav .nav-link,
+.explore .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #aaa !important;
+}
+
+/* Explore Section */
+.explore {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.explore select {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.explore select option {
+    background: black;
+    color: white;
+}
+
+/* Search Box */
+.search-box {
+    width: 200px;
+    height: 34px;
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.search-box::placeholder {
+    color: #999;
+}
+
+/* NASA Logo */
+.logo-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nasa-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Live Badge */
+.live {
+    color: red;
+    border: 1px solid red;
+    font-size: 11px;
+    padding: 2px 5px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+/* Mobile Toggle */
+.navbar-toggler {
+    border: 1px solid #777;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Tablet and Mobile */
+@media (max-width: 991px) {
+
+    .navbar-brand {
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar-collapse {
+        background: #000;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .explore {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .logo-link {
+        display: none !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .explore {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+}
+/* Main Section */
+.spacewalk-section {
+    width: 100%;
+    padding: 45px 16px;
+}
+
+/* Live Heading */
+.live-heading h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Horizontal Line */
+.spacewalk-section hr {
+    border: 0;
+    border-top: 1px solid #bbb;
+    opacity: 1;
+    margin: 0 0 16px;
+}
+
+/* Main Content */
+.spacewalk-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Image */
+.spacewalk-image {
+    flex: 0 0 82px;
+}
+
+.spacewalk-image img {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Title */
+.spacewalk-title {
+    flex: 1;
+}
+
+.spacewalk-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Description */
+.spacewalk-description {
+    flex: 1;
+}
+
+.spacewalk-description p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Arrow Button */
+.spacewalk-button {
+    flex: 0 0 32px;
+}
+
+.spacewalk-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #ff403b;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.spacewalk-button a:hover {
+    background: #d92622;
+    transform: translateX(3px);
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+
+    .spacewalk-title h1 {
+        font-size: 28px;
+    }
+
+    .spacewalk-content {
+        gap: 15px;
+    }
+
+    .spacewalk-description p {
+        font-size: 14px;
+    }
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+
+    .spacewalk-section {
+        padding: 30px 15px;
+    }
+
+    .live-heading h4 {
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .spacewalk-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .spacewalk-image {
+        flex: 0 0 65px;
+    }
+
+    .spacewalk-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .spacewalk-title {
+        flex: 1;
+    }
+
+    .spacewalk-title h1 {
+        font-size: 24px;
+        white-space: normal;
+    }
+
+    .spacewalk-description {
+        flex: 1 1 100%;
+        padding-left: 0;
+    }
+
+    .spacewalk-description p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .spacewalk-button {
+        margin-left: auto;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+
+    .live-heading h4 {
+        font-size: 15px;
+    }
+
+    .spacewalk-title h1 {
+        font-size: 21px;
+    }
+
+    .spacewalk-image {
+        flex-basis: 55px;
+    }
+
+    .spacewalk-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
